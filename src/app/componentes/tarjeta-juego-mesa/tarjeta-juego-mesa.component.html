@@ -1,0 +1,25 @@
+<div class="juego-destacado" *ngIf="juegoMesa">
+    <img [src]="'assets/IMG-JUEGOS/'+juegoMesa.imagenURL" [alt]="juegoMesa.imagenURL">
+    <div class="datos-juego">
+        <h3>{{juegoMesa.nombre}}</h3>
+        <p class="descripcion-hover">{{juegoMesa.descripcion}}</p>
+        <p><strong>{{juegoMesa.precio.toFixed(2)}} €</strong></p>
+    </div>
+    <button class="btn-anadir-carrito">Añadir al carrito</button>
+</div>
+
+      <!-- (click)="agregarAlCarrito(juegoMesa)"
+        
+        const precio = document.createElement("p");
+
+      if (producto.descuento) {
+        const precioConDescuento =
+          producto.precio * (1 - producto.porcentajeDescuento / 100);
+        precio.innerHTML = `<strong>${precioConDescuento.toFixed(
+          2
+        )} €</strong> <span class="precio-original">Antes ${producto.precio.toFixed(
+          2
+        )} €</span>`;
+      } else {
+        precio.innerHTML = `<strong>${producto.precio.toFixed(2)} €</strong>`;
+      } -->

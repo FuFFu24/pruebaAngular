@@ -1,0 +1,8 @@
+<mat-grid-list cols="4" rowHeight="1:2">
+    <mat-grid-tile *ngFor="let juegoMesa of juegosMesa" (click)="mostrarDescripcion(juegoMesa.idProducto)">
+        <section class="destacados">
+            <!-- El contenido de los juegos de mesa se mostrará aquí -->
+            <app-tarjeta-juego-mesa [id]="juegoMesa.idProducto"></app-tarjeta-juego-mesa>
+        </section>
+    </mat-grid-tile>
+</mat-grid-list>

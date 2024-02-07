@@ -1,0 +1,10 @@
+/* Estilos para la sección de Destacados de Juegos */
+.destacados {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0 20px 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+}

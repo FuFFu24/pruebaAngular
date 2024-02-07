@@ -1,0 +1,91 @@
+/* Estilos para cada juego destacado */
+.juego-destacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Aumenta este valor para hacer los productos más grandes */
+    padding: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .juego-destacado:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    z-index: 1;
+  }
+  
+  .juego-destacado .web-page {
+    color: #184941;
+    text-decoration: none;
+  }
+  
+  .juego-destacado img {
+    width: 80%;
+    aspect-ratio: 4/5;
+    object-fit: contain;
+  }
+  
+  .juego-destacado .datos-juego {
+    margin: 10px 0;
+  }
+  
+  .precio-con-descuento {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .precio-original {
+    text-decoration: line-through;
+    font-size: 14px;
+  }
+  
+  /* Estilos para la cuadrícula de productos */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Muestra 4 columnas por fila */
+  }
+  
+  .product-grid-desplegable {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Muestra 5 columnas por fila */
+  }
+  
+  /* Estilo inicial para la descripción que estará oculta */
+  .descripcion-hover {
+    display: none;
+    font-size: 14px;
+    transition: font-size 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .juego-destacado:hover .descripcion-hover {
+    display: block;
+    font-size: 12px;
+  }
+  
+  /* Estilos para el botón "Añadir al carrito" */
+  .btn-anadir-carrito {
+    display: none;
+    max-width: 50%;
+    padding: 5px 10px;
+    background-color: var(--puerto-rico-900);
+    color: #ffffff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .juego-destacado:hover .btn-anadir-carrito {
+    display: inline-block;
+  }
+  
+  .btn-anadir-carrito:hover {
+    background-color: var(--puerto-rico-400);
+  }

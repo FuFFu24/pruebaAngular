@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* Paleta de colores */
+:root {
+    --puerto-rico-50: #f1fcf8;
+    --puerto-rico-100: #d0f7eb;
+    --puerto-rico-200: #a1eed8;
+    --puerto-rico-300: #69dfc1;
+    --puerto-rico-400: #4bcbaf;
+    --puerto-rico-500: #21ab8e;
+    --puerto-rico-600: #188974;
+    --puerto-rico-700: #176e5f;
+    --puerto-rico-800: #17584e;
+    --puerto-rico-900: #184941;
+    --puerto-rico-950: #082b28;
+  }
+
+  /* Reset de estilos y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "PT Sans";
+    background-color: var(--puerto-rico-50);
+    color: var(--puerto-rico-900);
+  }
